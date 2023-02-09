@@ -1,0 +1,152 @@
+body {
+  font-size: 16px;
+  background-color: #fff;
+  @extend %rubik-regular;
+}
+
+.container {
+  max-width: 1770px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container_2 {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 120px;
+}
+
+.title {
+  @extend %dmsans-bold;
+  color: #191919;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.button {
+  @extend %rubik-medium;
+  font-size: 15px;
+  color: #fff !important;
+  width: 200px;
+  height: 60px;
+  background-color: #a3bbc8 !important;
+  padding: 0 100px 0 30px;
+  position: relative;
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  background-image: url('../images/arrow.png');
+  width: 22px;
+  height: 9px;
+  top: 25px;
+  right: 20px;
+}
+
+.button:focus {
+  outline: 2px solid $button__focus;
+}
+
+.button:active {
+  opacity: 0.7;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.menu__link {
+  font-size: 14px;
+  color: #8b8b8b;
+  @extend %dmsans-bold;
+}
+
+.mixitup-control-active {
+  color: #292929;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.menu__link:focus {
+  outline: 2px solid #a3bbc8;
+  border-radius: 5px;
+}
+
+.menu__link:active {
+  opacity: 0.5;
+}
+
+%checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+%btn {
+  padding: 10px 40px;
+  background-color: #a3bac7;
+  @extend %rubik-regular;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-left: 270px;
+
+  &__list {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  &__item {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a3bbc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--active {
+      background-color: #a3bbc8;
+    }
+  }
+
+  &__link {
+    @extend %rubik-bold;
+    font-size: 16px;
+    color: $about__color;
+
+    &--active {
+      color: #fff;
+    }
+  }
+
+  &__next {
+    padding: 15px 20px;
+    @extend %rubik-bold;
+    font-size: 16px;
+    color: $about__color;
+    border: 1px solid #a3bbc8;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+}
