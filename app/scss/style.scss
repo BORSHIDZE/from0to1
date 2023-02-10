@@ -2476,13 +2476,103 @@
     margin-bottom: 40px;
 
     &:hover {
-        border-color: #a3bbc8;
-      }
+      border-color: #a3bbc8;
+    }
   }
 
   &__btn {
     @extend %btn;
     border-radius: 0;
+  }
+}
+
+.contact {
+
+  &__title {
+    margin: 0 auto;
+    @extend %rubik-regular;
+    line-height: 20px;
+    color: #a3bbc8;
+    text-align: center;
+    margin-bottom: 75px;
+
+    span {
+      font-size: 35px;
+      line-height: 57px;
+      color: $about__color;
+
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 70px 0;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 370px;
+    height: 380px;
+    transition: all .5s;
+    margin-bottom: 100px;
+
+    &:hover {
+      border: 1px solid #a3bbc8;
+    }
+  }
+
+  &__box-svg {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    transition: all .5s;
+
+    &:hover {
+      background-color: #a3bbc8;
+      border-radius: 15px;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__box {
+
+    &-title {
+      @extend %rubik-regular;
+      font-size: 20px;
+      line-height: 20px;
+      color: black;
+      margin-bottom: 25px;
+    }
+
+    &-info {
+      @extend %rubik-regular;
+      line-height: 30px;
+      color: #565872;
+    }
+  }
+
+  &__down-form {
+    width: 600px;
+  }
+
+  &__input,
+  &__textarea {
+    border: transparent;
+    background-position-x: 575px;
+  }
+
+  &__input-name,
+  &__input-email {
+    background-position: 275px;
   }
 }
 
