@@ -1,0 +1,124 @@
+.conditions {
+
+  &__section {
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    @extend %rubik-bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: $about__color;
+  }
+
+  &__item:not(last-child) {
+    margin-bottom: 70px;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  &__number {
+    @extend %rubik-bold;
+    color: $about__color;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+
+  &__text {
+    @extend %rubik-regular;
+    color: $about__color;
+    line-height: 30px;
+  }
+}
+
+.log {
+  &__form {
+    width: 570px;
+    margin: 0 auto;
+    padding: 0 50px;
+    @extend %rubik-bold;
+    font-size: 14px;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__input {
+    width: 475px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #f0eaea;
+  }
+
+  &__button {
+    width: 100%;
+    text-align: center;
+    background-color: #a3bbc8;
+    padding: 22px 0;
+    @extend %rubik-medium;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #a3bbc8;
+      color: $about__color;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  &__label--checkbox,
+  &__error {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    @extend %rubik-medium;
+    margin-bottom: 25px;
+  }
+
+  &__button-2 {
+    width: 100%;
+    text-align: center;
+    border: 2px solid #a3bbc8;
+    padding: 22px 0;
+    @extend %rubik-medium;
+    font-size: 18px;
+    color: $about__color;
+
+    &:hover {
+      background-color: #a3bbc8;
+      color: #fff;
+      border: 2px solid transparent;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

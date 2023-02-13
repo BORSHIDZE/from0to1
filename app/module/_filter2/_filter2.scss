@@ -1,0 +1,185 @@
+.filter {
+  &__inner {
+    width: 270px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @extend %dmsans-bold;
+    font-size: 18px;
+    color: $about__color;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-right: 60px;
+    margin-top: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background-color: #c2d2db;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-price {
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__box {
+      @extend %rubik-bold;
+      color: $about__color;
+      font-size: 14px;
+    }
+
+    &__from {
+      padding-right: 200px;
+    }
+  }
+}
+
+.irs--flat .irs-line {
+  height: 3px;
+  background-color: #c2d2db;
+}
+
+.irs--flat .irs-bar {
+  height: 4px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  width: 0;
+}
+
+.irs--flat .irs-handle {
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+  top: 19px;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single,
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none
+}
+
+.filter-category {
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox;
+
+    &:checked+.filter-category__checkbox {
+      background-color: #e7ecef;
+    }
+  }
+
+  &__checkbox {
+    padding: 15px;
+    @extend %rubik-bold;
+    font-size: 16px;
+    color: $about__color;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.filter-brand {
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %checkbox;
+
+    &:checked+.filter-brand__checkbox {
+      background-color: #e7ecef;
+      color: $about__color;
+    }
+  }
+
+  &__checkbox {
+    padding: 15px;
+    @extend %rubik-bold;
+    font-size: 16px;
+    color: #bdbdbd;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    color: $about__color;
+  }
+
+}
+
+.filter-products {
+
+  &__box {
+    display: flex;
+
+    &:not(last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__box-img {
+    margin-right: 20px;
+    border: 2px solid #f7f7f7;
+    background-color: #fefefe;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    @extend %rubik-regular;
+    color: black;
+  }
+
+  .star {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  &__price {
+    margin-bottom: 10px;
+    @extend %rubik-regular;
+    color: black;
+    font-size: 16px;
+  }
+
+}
+
+.filter__box {
+  display: flex;
+}
+
+.filter__content {
+  margin-left: 40px;
+  width: 870px;
+}
+
+.filter__list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px 30px;
+  margin: 0;
+  margin-bottom: 120px;
+}

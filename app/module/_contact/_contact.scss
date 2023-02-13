@@ -1,0 +1,166 @@
+.contact {
+
+  &__title {
+    margin: 0 auto;
+    @extend %rubik-regular;
+    line-height: 20px;
+    color: #a3bbc8;
+    text-align: center;
+    margin-bottom: 75px;
+
+    span {
+      font-size: 35px;
+      line-height: 57px;
+      color: $about__color;
+
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 70px 0;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 370px;
+    height: 380px;
+    transition: all .5s;
+    margin-bottom: 100px;
+
+    &:hover {
+      border: 1px solid #a3bbc8;
+    }
+  }
+
+  &__box-svg {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    transition: all .5s;
+
+    &:hover {
+      background-color: #a3bbc8;
+      border-radius: 15px;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__box {
+
+    &-title {
+      @extend %rubik-regular;
+      font-size: 20px;
+      line-height: 20px;
+      color: black;
+      margin-bottom: 25px;
+    }
+
+    &-info {
+      @extend %rubik-regular;
+      line-height: 30px;
+      color: #565872;
+    }
+  }
+
+  &__down-form {
+    width: 600px;
+  }
+
+  &__input,
+  &__textarea {
+    border: transparent;
+    background-position-x: 575px;
+  }
+
+  &__input-name,
+  &__input-email {
+    background-position: 275px;
+  }
+}
+
+.blog-detalis {
+  
+
+  &__down {
+    margin: 90px 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $about__color;
+    margin-bottom: 50px;
+    @extend %rubik-regular;
+  }
+
+  &__form {
+    width: 600px;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 400px;
+    height: 50px;
+    border: 2px solid #e5e5e5;
+    padding: 18px;
+    border: none;
+
+    &:hover {
+      border-color: #a3bbc8;
+    }
+  }
+
+  &__input-name {
+    background-image: url('../images/icons/user-comment.svg');
+    background-repeat: no-repeat;
+    background-size: 14px 13px;
+    background-position: 370px;
+  }
+
+  &__input-email {
+    background-image: url('../images/icons/email.svg');
+    background-repeat: no-repeat;
+    background-size: 18px 12px;
+    background-position: 370px;
+  }
+
+  &__textarea {
+    border: 2px solid #e5e5e5;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 18px;
+    background-image: url('../images/icons/comment.svg');
+    background-repeat: no-repeat;
+    background-size: 18px 15px;
+    background-position-x: 800px;
+    background-position-y: 15px;
+    margin-bottom: 40px;
+    border: none;
+
+    &:hover {
+      border-color: #a3bbc8;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    border-radius: 0;
+  }
+}
