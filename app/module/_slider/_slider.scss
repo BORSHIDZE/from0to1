@@ -1,0 +1,63 @@
+.slider {
+  height: 750px;
+  background-color: #fcd7b6;
+  align-items: center;
+  background-image: url('../images/backsofa.png');
+  background-position-x: 85%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+
+  &__box {
+    display: flex !important;
+    justify-content: space-around;
+    margin-top: 225px;
+    padding: 0 175px;
+  }
+
+  &__info {
+    max-width: 420px;
+  }
+
+  &__title {
+    @extend %rubik-medium;
+    text-transform: uppercase;
+    font-size: 72px;
+    margin-bottom: 15px;
+    color: #243f4d;
+  }
+
+  &__text {
+    @extend %rubik-regular;
+    font-size: 18px;
+    color: $accent;
+    line-height: 1.7;
+    margin-bottom: 45px;
+    max-width: 365px;
+  }
+
+  &__picture {
+    margin-top: 55px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots button {
+    margin-right: 12px;
+    margin-top: 120px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fde3cc;
+    @extend %rubik-medium;
+    font-size: 10px;
+    color: #708088;
+  }
+
+  .slick-active button {
+    background-color: #fff;
+    color: #243f4d;
+  }
+}

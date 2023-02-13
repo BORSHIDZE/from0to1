@@ -11,65 +11,7 @@
 
 <body>
 
-  <header class="header">
-  <div class="container">
-
-    <div class="header__inner">
-
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="logo">
-        <p class="logo__text">Glee.</p>
-      </a>
-
-      <nav class="menu-header">
-        <ul class="menu__list-header">
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/">Home +</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/about.html">About</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/list1.html">Services</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/conditions.html">Pages +</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/list2.html">News</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/detalis.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="user">
-        <ul class="user__menu">
-          <li class="user__item user__link--krug">
-            <a class="user__link user__link--search" href="http://localhost:3000/blog.html">
-            </a>
-          </li>
-          <li class="user__item user__link--oval1">
-            <a class="user__link user__link--heart" href="http://localhost:3000/blog_detalis.html">
-              <div class="user__link--num">0</div>
-            </a>
-          </li>
-          <li class="user__item user__link--oval2">
-            <a class="user__link user__link--cart" href="http://localhost:3000/contact.html">
-              <div class="user__link--num">0</div>
-            </a>
-          </li>
-          <li class="user__item user__link--menu">
-            <a class="user__link user__link--menu__btn" href="#">
-              <span class="user__link--menu__dots"></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  {% include 'app/module/_header/_header.html' %}
 
   <main>
 

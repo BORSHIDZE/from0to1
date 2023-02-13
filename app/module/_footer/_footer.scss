@@ -1,0 +1,162 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    margin-right: 65px;
+  }
+
+  &__services {
+    margin-right: 180px;
+  }
+
+  &__account {
+    margin-right: 200px;
+  }
+
+  &__logo {
+    display: inline-flex;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @extend %dmsans-bold;
+    font-size: 16px;
+    color: $footer__color;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    max-width: 240px;
+  }
+
+  &__info-address,
+  &__info-phone,
+  &__info-email,
+  &__services-item,
+  &__account-item {
+    padding-bottom: 15px;
+  }
+
+  &__info-address:hover,
+  &__info-phone:hover,
+  &__info-email:hover,
+  &__services-item:hover,
+  &__account-item:hover {
+    text-decoration: underline;
+  }
+
+  &__info-address:active,
+  &__info-phone:active,
+  &__info-email:active,
+  &__services-item:active,
+  &__account-item:active {
+    opacity: 0.5;
+  }
+
+  &__info-link,
+  &__services-link,
+  &__account-link,
+  .form__text {
+    color: $footer__color2;
+    font-size: 14px;
+    @extend %rubik-regular;
+  }
+}
+
+.form {
+  &__text {
+    padding-bottom: 45px;
+  }
+
+  &__field {
+    margin-right: 15px;
+    width: 115px;
+    color: #234969;
+    @extend %dmsans-regular;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  &__field:hover {
+    text-decoration: underline;
+  }
+
+  &__field:focus {
+    outline: 2px solid #a3bbc8;
+  }
+
+  &__field:active {
+    opacity: 0.5;
+  }
+
+  &__button {
+    padding: 15px 20px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 14px;
+    @extend %dmsans-regular;
+  }
+
+  &__button:focus {
+    outline: 2px solid $button__focus;
+  }
+
+  &__button:active {
+    opacity: 0.7;
+  }
+}
+
+.footer {
+
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  &__down-text,
+  &__link {
+    color: $footer__color2;
+    @extend %rubik-regular;
+    font-size: 14px;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__link:focus {
+    border-radius: 3px;
+    outline: 2px solid #a3bbc8;
+  }
+
+  &__link:active {
+    opacity: 0.5;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item {
+    padding: 0 15px 0 15px;
+    border-right: 1px solid $footer__color2;
+  }
+
+  &__item-line {
+    border-right: 1px solid transparent;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #dae4e9;
+}

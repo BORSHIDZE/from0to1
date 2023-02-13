@@ -1,0 +1,112 @@
+.about-page {
+
+  &__all {
+    display: flex;
+  }
+
+  &__content {
+    margin-top: 85px;
+    margin-left: 30px;
+  }
+
+  &__box {
+    display: flex;
+    height: 100px;
+
+    &-number {
+      @extend %rubik-bold;
+      font-size: 140px;
+      line-height: 70px;
+      color: #a3bbc8;
+    }
+
+    &-text {
+      @extend %rubik-regular;
+      line-height: 30px;
+      width: 90px;
+      color: $about__color;
+      margin-left: 30px;
+    }
+  }
+
+  &__info {
+    margin-top: 50px;
+  }
+
+  &__title {
+    @extend %dmsans-bold;
+    font-size: 36px;
+    line-height: 32px;
+    color: $about__color;
+  }
+
+  &__subtext {
+    @extend %rubik-regular;
+    line-height: 32px;
+    color: $about__color;
+    margin-top: 50px;
+  }
+
+  &__numbers {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #e6eaf0;
+    display: flex;
+    justify-content: space-around;
+
+    &-box {
+      width: 90px;
+      height: 100px;
+      padding-top: 35px
+    }
+
+    &-number {
+      @extend %dmsans-bold;
+      font-size: 36px;
+      line-height: 38px;
+      color: $about__color;
+      position: relative;
+
+      &1::after {
+        content: "";
+        background-image: url('../images/about/about1.svg');
+        width: 36px;
+        height: 37px;
+
+      }
+
+      &2::after {
+        content: "";
+        background-image: url('../images/about/about2.svg');
+        width: 43px;
+        height: 39px;
+
+      }
+
+      &3::after {
+        content: "";
+        background-image: url('../images/about/about3.svg');
+        width: 41px;
+        height: 40px;
+      }
+
+      &1::after,
+      &2::after,
+      &3::after {
+        position: absolute;
+        top: 10%;
+        left: -50%;
+      }
+    }
+
+    &-text {
+      @extend %dmsans-bold;
+      line-height: 17px;
+      color: #4c4c4c;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+}

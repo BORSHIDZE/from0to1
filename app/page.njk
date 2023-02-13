@@ -5,122 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in</title>
-  <link rel="stylesheet" href="css/login.min.css">
+  <title>page</title>
+  <link rel="stylesheet" href="css/page.min.css">
 </head>
 
 <body>
 
-  <header class="header">
-  <div class="container">
-
-    <div class="header__inner">
-
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="logo">
-        <p class="logo__text">Glee.</p>
-      </a>
-
-      <nav class="menu-header">
-        <ul class="menu__list-header">
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/">Home +</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/about.html">About</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/list1.html">Services</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/conditions.html">Pages +</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/list2.html">News</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/detalis.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="user">
-        <ul class="user__menu">
-          <li class="user__item user__link--krug">
-            <a class="user__link user__link--search" href="http://localhost:3000/blog.html">
-            </a>
-          </li>
-          <li class="user__item user__link--oval1">
-            <a class="user__link user__link--heart" href="http://localhost:3000/blog_detalis.html">
-              <div class="user__link--num">0</div>
-            </a>
-          </li>
-          <li class="user__item user__link--oval2">
-            <a class="user__link user__link--cart" href="http://localhost:3000/contact.html">
-              <div class="user__link--num">0</div>
-            </a>
-          </li>
-          <li class="user__item user__link--menu">
-            <a class="user__link user__link--menu__btn" href="#">
-              <span class="user__link--menu__dots"></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  {% include 'app/module/_header/_header.html' %}
 
   <main>
 
     <section class="top">
       <div class="container">
-        <h2 class="top__title title">Log in</h2>
+        <h2 class="top__title title">About Us</h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Home</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Log in </a>
+              <a class="breadcrumbs__link" href="#">About Us</a>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <section class="section log__section">
-      <div class="container_2">
-        <form class="log__form" action="#">
-
-          <label class="log__label">
-            Username or email address*
-            <input class="log__input" type="text" required>
-          </label>
-
-          <label class="log__label">
-            Password*
-            <input class="log__input" type="password" required>
-          </label>
-
-          <button class="log__button"
-          type="submit">Login</button>
-
-          <div class="log__box">
-
-            <label class="log__label--checkbox">
-              <input type="checkbox">
-              Remember me
-            </label>
-
-            <a class="log__error" href="#">Lost your password?</a>
-
-          </div>
-
-          <p class="log__text">Not registered? No problem</p>
-
-          <button class="log__button-2">Create an account</button>
-        </form>
       </div>
     </section>
 
@@ -357,6 +264,9 @@
 
     </div>
   </footer>
+
+  <script src="jquery"></script>
+  <script src="js/main.min.js"></script>
 
 </body>
 

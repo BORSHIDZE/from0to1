@@ -5,122 +5,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in</title>
-  <link rel="stylesheet" href="css/login.min.css">
+  <title>Conditions</title>
+  <link rel="stylesheet" href="css/conditions.min.css">
 </head>
 
 <body>
 
-  <header class="header">
-  <div class="container">
+  {% include 'app/module/_header/_header.html' %}
 
-    <div class="header__inner">
+    <section class="section conditions__section">
+      <div class="container_2">
+        <div class="conditions__item">
+          <h2 class="conditions__title">Types of Personal Information We Collect</h2>
+          <ul class="conditions__list">
+            <li class="conditions__items">
+              <p class="conditions__number">
+                01
+              </p>
 
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="logo">
-        <p class="logo__text">Glee.</p>
-      </a>
+              <p class="conditions__text">
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore
+              </p>
 
-      <nav class="menu-header">
-        <ul class="menu__list-header">
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/">Home +</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/about.html">About</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/list1.html">Services</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/conditions.html">Pages +</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/list2.html">News</a>
-          </li>
-          <li class="menu__item-header">
-            <a class="menu__link-header" href="http://localhost:3000/detalis.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="user">
-        <ul class="user__menu">
-          <li class="user__item user__link--krug">
-            <a class="user__link user__link--search" href="http://localhost:3000/blog.html">
-            </a>
-          </li>
-          <li class="user__item user__link--oval1">
-            <a class="user__link user__link--heart" href="http://localhost:3000/blog_detalis.html">
-              <div class="user__link--num">0</div>
-            </a>
-          </li>
-          <li class="user__item user__link--oval2">
-            <a class="user__link user__link--cart" href="http://localhost:3000/contact.html">
-              <div class="user__link--num">0</div>
-            </a>
-          </li>
-          <li class="user__item user__link--menu">
-            <a class="user__link user__link--menu__btn" href="#">
-              <span class="user__link--menu__dots"></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
-  <main>
-
-    <section class="top">
-      <div class="container">
-        <h2 class="top__title title">Log in</h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Home</a>
             </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Log in </a>
+            <li class="conditions__items">
+              <p class="conditions__number">
+                02
+              </p>
+
+              <p class="conditions__text">
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore
+              </p>
+
+            </li>
+            <li class="conditions__items">
+              <p class="conditions__number">
+                03
+              </p>
+
+              <p class="conditions__text">
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+
+            </li>
+            <li class="conditions__items">
+              <p class="conditions__number">
+                04
+              </p>
+
+              <p class="conditions__text">
+                Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.
+              </p>
+
+            </li>
+            <li class="conditions__items">
+              <p class="conditions__number">
+                05
+              </p>
+
+              <p class="conditions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              </p>
+
             </li>
           </ul>
+
         </div>
-      </div>
-    </section>
+        <div class="conditions__item">
+          <h2 class="conditions__title">How marketpmss.com Collects Personal Infonnation</h2>
 
-    <section class="section log__section">
-      <div class="container_2">
-        <form class="log__form" action="#">
+          <p class="conditions__text">
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore
+          </p>
+        </div>
+        <div class="conditions__item">
+          <h2 class="conditions__title">How marketprosscom Uses Personal Information</h2>
 
-          <label class="log__label">
-            Username or email address*
-            <input class="log__input" type="text" required>
-          </label>
-
-          <label class="log__label">
-            Password*
-            <input class="log__input" type="password" required>
-          </label>
-
-          <button class="log__button"
-          type="submit">Login</button>
-
-          <div class="log__box">
-
-            <label class="log__label--checkbox">
-              <input type="checkbox">
-              Remember me
-            </label>
-
-            <a class="log__error" href="#">Lost your password?</a>
-
-          </div>
-
-          <p class="log__text">Not registered? No problem</p>
-
-          <button class="log__button-2">Create an account</button>
-        </form>
+          <p class="conditions__text">
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore
+          </p>
+        </div>
       </div>
     </section>
 

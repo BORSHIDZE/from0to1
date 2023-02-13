@@ -1,0 +1,86 @@
+.delivery {
+  margin-top: 120px;
+
+  &__container {
+    background-color: #fcd7b6;
+    height: 320px
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 170px;
+  }
+
+  &__box {
+    width: 190px;
+    height: 70px;
+    text-align: center
+  }
+
+  &__numbers {
+    @extend %dmsans-bold;
+    font-size: 36px;
+    line-height: 32px;
+    color: $about__color;
+    position: relative;
+
+
+    &1::after,
+    &2::after,
+    &3::after,
+    &4::after {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &1::after {
+      background-image: url('../images/about/delivery1.svg');
+      width: 64px;
+      height: 57px;
+    }
+
+    &2::after {
+      background-image: url('../images/about/delivery2.svg');
+      width: 64px;
+      height: 40px;
+      top: -70px;
+    }
+
+    &3::after {
+      background-image: url('../images/about/delivery3.svg');
+      width: 67px;
+      height: 64px;
+    }
+
+    &4::after {
+      background-image: url('../images/about/delivery4.svg');
+      width: 48px;
+      height: 63px;
+    }
+
+    &1::before,
+    &2::before,
+    &3::before,
+    &4::before {
+      content: "";
+      position: absolute;
+      background-image: url('../images/about/delivery5.svg');
+      width: 33px;
+      height: 33px;
+      top: -56px;
+      left: 100px;
+    }
+  }
+
+  &__text {
+    margin-top: 25px;
+    @extend %dmsans-bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: $about__color;
+  }
+}

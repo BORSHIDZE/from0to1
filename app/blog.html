@@ -6,201 +6,246 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/blog.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
+  <div class="container">
 
-      <div class="header__inner">
+    <div class="header__inner">
 
-        <a class="logo" href="#">
-          <img src="images/logo.png" alt="logo">
-          <p class="logo__text">Glee.</p>
-        </a>
+      <a class="logo" href="#">
+        <img src="images/logo.png" alt="logo">
+        <p class="logo__text">Glee.</p>
+      </a>
 
-        <nav class="menu-header">
-          <ul class="menu__list-header">
-            <li class="menu__item-header">
-              <a class="menu__link-header" href="http://localhost:3000">Home +</a>
-            </li>
-            <li class="menu__item-header">
-              <a class="menu__link-header" href="http://localhost:3000/about.html">About</a>
-            </li>
-            <li class="menu__item-header">
-              <a class="menu__link-header" href="http://localhost:3000/list1.html">Services</a>
-            </li>
-            <li class="menu__item-header">
-              <a class="menu__link-header" href="http://localhost:3000/conditions.html">Pages +</a>
-            </li>
-            <li class="menu__item-header">
-              <a class="menu__link-header" href="http://localhost:3000/list2.html">News</a>
-            </li>
-            <li class="menu__item-header">
-              <a class="menu__link-header" href="http://localhost:3000/detalis.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="menu-header">
+        <ul class="menu__list-header">
+          <li class="menu__item-header">
+            <a class="menu__link-header" href="http://localhost:3000/">Home +</a>
+          </li>
+          <li class="menu__item-header">
+            <a class="menu__link-header" href="http://localhost:3000/about.html">About</a>
+          </li>
+          <li class="menu__item-header">
+            <a class="menu__link-header" href="http://localhost:3000/list1.html">Services</a>
+          </li>
+          <li class="menu__item-header">
+            <a class="menu__link-header" href="http://localhost:3000/conditions.html">Pages +</a>
+          </li>
+          <li class="menu__item-header">
+            <a class="menu__link-header" href="http://localhost:3000/list2.html">News</a>
+          </li>
+          <li class="menu__item-header">
+            <a class="menu__link-header" href="http://localhost:3000/detalis.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="user">
-          <ul class="user__menu">
-            <li class="user__item user__link--krug">
-              <a class="user__link user__link--search" href="http://localhost:3000/blog.html">
-              </a>
-            </li>
-            <li class="user__item user__link--oval1">
-              <a class="user__link user__link--heart" href="http://localhost:3000/blog_detalis.html">
-                <div class="user__link--num">0</div>
-              </a>
-            </li>
-            <li class="user__item user__link--oval2">
-              <a class="user__link user__link--cart" href="http://localhost:3000/contact.html">
-                <div class="user__link--num">0</div>
-              </a>
-            </li>
-            <li class="user__item user__link--menu">
-              <a class="user__link user__link--menu__btn" href="#">
-                <span class="user__link--menu__dots"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="user">
+        <ul class="user__menu">
+          <li class="user__item user__link--krug">
+            <a class="user__link user__link--search" href="http://localhost:3000/blog.html">
+            </a>
+          </li>
+          <li class="user__item user__link--oval1">
+            <a class="user__link user__link--heart" href="http://localhost:3000/blog_detalis.html">
+              <div class="user__link--num">0</div>
+            </a>
+          </li>
+          <li class="user__item user__link--oval2">
+            <a class="user__link user__link--cart" href="http://localhost:3000/contact.html">
+              <div class="user__link--num">0</div>
+            </a>
+          </li>
+          <li class="user__item user__link--menu">
+            <a class="user__link user__link--menu__btn" href="#">
+              <span class="user__link--menu__dots"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
 
     <section class="top">
       <div class="container">
-        <h2 class="top__title title">Blog</h2>
+        <h2 class="top__title title">About Us</h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Home</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Blog</a>
+              <a class="breadcrumbs__link" href="#">About Us</a>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="section blog">
-      <div class="container_2">
+    <div class="blog__box1">
 
-        <div class="blog__inner">
+  <div class="blog__item">
 
-          <div class="blog__box1">
+    <a class="blog__item-link" href="#">
+      <img class="blog__item-img" src="images/blog/1.jpg" alt="picture blog">
+    </a>
 
-            <div class="blog__item">
+    <div class="blog__item-links">
+      <p class="blog__item-date">january,2020</p>
+      <a class="blog__item-user" href="#">by admin</a>
+    </div>
 
-              <a class="blog__item-link" href="#">
-                <img class="blog__item-img" src="images/blog/1.jpg" alt="picture blog">
-              </a>
+    <h3 class="blog__item-title">
+      <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
+    </h3>
 
-              <div class="blog__item-links">
-                <p class="blog__item-date">january,2020</p>
-                <a class="blog__item-user" href="#">by admin</a>
-              </div>
+    <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
+      adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 
-              <h3 class="blog__item-title">
-                <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
-              </h3>
+    <button class="blog__item-btn">View More</button>
 
-              <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
-                adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+  </div>
 
-              <button class="blog__item-btn">View More</button>
+  <div class="blog__item">
 
-            </div>
+    <a class="blog__item-link" href="#">
+      <img class="blog__item-img" src="images/blog/2.jpg" alt="picture blog">
+    </a>
 
-            <div class="blog__item">
+    <div class="blog__item-links">
+      <p class="blog__item-date">january,2020</p>
+      <a class="blog__item-user" href="#">by admin</a>
+    </div>
 
-              <a class="blog__item-link" href="#">
-                <img class="blog__item-img" src="images/blog/2.jpg" alt="picture blog">
-              </a>
+    <h3 class="blog__item-title">
+      <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
+    </h3>
 
-              <div class="blog__item-links">
-                <p class="blog__item-date">january,2020</p>
-                <a class="blog__item-user" href="#">by admin</a>
-              </div>
+    <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
+      adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 
-              <h3 class="blog__item-title">
-                <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
-              </h3>
+    <button class="blog__item-btn">View More</button>
 
-              <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
-                adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+  </div>
 
-              <button class="blog__item-btn">View More</button>
+  <div class="blog__item">
 
-            </div>
+    <a class="blog__item-link" href="#">
+      <img class="blog__item-img" src="images/blog/3.jpg" alt="picture blog">
+    </a>
 
-            <div class="blog__item">
+    <div class="blog__item-links">
+      <p class="blog__item-date">january,2020</p>
+      <a class="blog__item-user" href="#">by admin</a>
+    </div>
 
-              <a class="blog__item-link" href="#">
-                <img class="blog__item-img" src="images/blog/3.jpg" alt="picture blog">
-              </a>
+    <h3 class="blog__item-title">
+      <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
+    </h3>
 
-              <div class="blog__item-links">
-                <p class="blog__item-date">january,2020</p>
-                <a class="blog__item-user" href="#">by admin</a>
-              </div>
+    <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
+      adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 
-              <h3 class="blog__item-title">
-                <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
-              </h3>
+    <button class="blog__item-btn">View More</button>
 
-              <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
-                adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+  </div>
 
-              <button class="blog__item-btn">View More</button>
+  <div class="blog__item">
 
-            </div>
+    <a class="blog__item-link" href="#">
+      <img class="blog__item-img" src="images/blog/4.jpg" alt="picture blog">
+    </a>
 
-            <div class="blog__item">
+    <div class="blog__item-links">
+      <p class="blog__item-date">january,2020</p>
+      <a class="blog__item-user" href="#">by admin</a>
+    </div>
 
-              <a class="blog__item-link" href="#">
-                <img class="blog__item-img" src="images/blog/4.jpg" alt="picture blog">
-              </a>
+    <h3 class="blog__item-title">
+      <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
+    </h3>
 
-              <div class="blog__item-links">
-                <p class="blog__item-date">january,2020</p>
-                <a class="blog__item-user" href="#">by admin</a>
-              </div>
+    <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
+      adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 
-              <h3 class="blog__item-title">
-                <a class="blog__item-title__link" href="#">Fonsectetur adipisicing eiusmod</a>
-              </h3>
+    <button class="blog__item-btn">View More</button>
 
-              <p class="blog__item-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
-                adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+  </div>
 
-              <button class="blog__item-btn">View More</button>
+    <div class="filter__item blog__filter">
 
-            </div>
+  <h2 class="filter__title">category</h2>
 
-            <div class="pagination blog-pagination">
+  <form class="filter-category" action="#">
+
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <div class="filter-category__checkbox">
+        <span>Chair</span>
+        <span>></span>
+      </div>
+    </label>
+
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <div class="filter-category__checkbox">
+        <span>Table</span>
+        <span>></span>
+      </div>
+    </label>
+
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <div class="filter-category__checkbox">
+        <span>Lamp</span>
+        <span>></span>
+      </div>
+    </label>
+
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <div class="filter-category__checkbox">
+        <span>Watch</span>
+        <span>></span>
+      </div>
+    </label>
+
+    <label class="filter-category__label">
+      <input type="checkbox" class="filter-category__input">
+      <div class="filter-category__checkbox">
+        <span>Clock</span>
+        <span>></span>
+      </div>
+    </label>
+
+
+  </form>
+</div>
+
+    <div class="pagination blog-pagination">
               <ul class="pagination__list">
                 <li class="pagination__item pagination__item--active">
                   <a class="pagination__link pagination__link--active" href="#">
@@ -225,175 +270,9 @@
             </div>
           </div>
 
+    
 
-
-
-          <div class="blog__box">
-
-            <div class="blog-search">
-              <form class="blog-search__form" action="#">
-                <input class="blog-search__input" type="text">
-                <button class="blog-search__btn" type="submit"></button>
-              </form>
-            </div>
-
-
-            <div class="filter__item blog__filter">
-
-              <h2 class="filter__title">category</h2>
-
-              <form class="filter-category" action="#">
-
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <div class="filter-category__checkbox">
-                    <span>Chair</span>
-                    <span>></span>
-                  </div>
-                </label>
-
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <div class="filter-category__checkbox">
-                    <span>Table</span>
-                    <span>></span>
-                  </div>
-                </label>
-
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <div class="filter-category__checkbox">
-                    <span>Lamp</span>
-                    <span>></span>
-                  </div>
-                </label>
-
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <div class="filter-category__checkbox">
-                    <span>Watch</span>
-                    <span>></span>
-                  </div>
-                </label>
-
-                <label class="filter-category__label">
-                  <input type="checkbox" class="filter-category__input">
-                  <div class="filter-category__checkbox">
-                    <span>Clock</span>
-                    <span>></span>
-                  </div>
-                </label>
-
-
-              </form>
-            </div>
-
-            <div class="blog-post">
-
-              <div class="blog-post__box">
-
-                <h2 class="filter__title">recent post</h2>
-
-                <div class="blog-post__item">
-
-                  <a class="blog-post__link" href="#">
-                    <img class="blog-post__img" src="images/post/1.jpg" alt="post picture">
-                  </a>
-
-
-                  <span>
-                    <p class="blog-post__text">
-                      <a href="#">Corem ipsum dolor tetur adipisicing elit</a>
-                    </p>
-
-                    <p class="blog-post__date">28 january, 2020</p>
-                  </span>
-
-                </div>
-
-              </div>
-
-              <div class="blog-post__box">
-              
-                <div class="blog-post__item">
-              
-                  <a class="blog-post__link" href="#">
-                    <img class="blog-post__img" src="images/post/2.jpg" alt="post picture">
-                  </a>
-              
-              
-                  <span>
-                    <p class="blog-post__text">
-                      <a href="#">Corem ipsum dolor tetur adipisicing elit</a>
-                    </p>
-              
-                    <p class="blog-post__date">28 january, 2020</p>
-                  </span>
-              
-                </div>
-              
-              </div>
-
-
-              <div class="blog-post__box">
-              
-                <div class="blog-post__item">
-              
-                  <a class="blog-post__link" href="#">
-                    <img class="blog-post__img" src="images/post/3.jpg" alt="post picture">
-                  </a>
-              
-              
-                  <span>
-                    <p class="blog-post__text">
-                      <a href="#">Corem ipsum dolor tetur adipisicing elit</a>
-                    </p>
-              
-                    <p class="blog-post__date">28 january, 2020</p>
-                  </span>
-              
-                </div>
-              
-              </div>
-
-
-              <div class="blog-post__box">
-              
-                <div class="blog-post__item">
-              
-                  <a class="blog-post__link" href="#">
-                    <img class="blog-post__img" src="images/post/4.jpg" alt="post picture">
-                  </a>
-              
-              
-                  <span>
-                    <p class="blog-post__text">
-                      <a href="#">Corem ipsum dolor tetur adipisicing elit</a>
-                    </p>
-              
-                    <p class="blog-post__date">28 january, 2020</p>
-                  </span>
-              
-                </div>
-              
-              </div>
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-
-
-
-
-
+    
     <section class="articles">
       <div class="container_2">
 
@@ -442,8 +321,7 @@
 
             </span>
 
-            <a class="articles__text" href="#">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore
+            <a class="articles__text" href="#">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
             </a>
 
             <div class="articles__box-inner">
@@ -510,117 +388,117 @@
 
 
   <footer class="footer">
-    <div class="container_2">
-      <div class="footer__top">
+  <div class="container_2">
+    <div class="footer__top">
 
-        <div class="footer__info footer__box">
-          <a class="logo footer__logo" href="#">
-            <img src="images/logo.png" alt="logo">
-            <p class="logo__text">Glee.</p>
-          </a>
-          <ul class="footer__info-list">
-            <li class="footer__info-address">
-              <a class="footer__info-link" href="#">ADDRESS: 4772 Wines Lane
-                Houston, TX 77032</a>
-            </li>
+      <div class="footer__info footer__box">
+        <a class="logo footer__logo" href="#">
+          <img src="images/logo.png" alt="logo">
+          <p class="logo__text">Glee.</p>
+        </a>
+        <ul class="footer__info-list">
+          <li class="footer__info-address">
+            <a class="footer__info-link" href="#">ADDRESS: 4772 Wines Lane
+              Houston, TX 77032</a>
+          </li>
 
-            <li class="footer__info-phone">
-              <a class="footer__info-link" href="tel:+8323475843">Telephone: +832-347-5843
-              </a>
-            </li>
+          <li class="footer__info-phone">
+            <a class="footer__info-link" href="tel:+8323475843">Telephone: +832-347-5843
+            </a>
+          </li>
 
-            <li class="footer__info-email">
-              <a class="footer__info-link" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
-            </li>
+          <li class="footer__info-email">
+            <a class="footer__info-link" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+          </li>
 
-          </ul>
-        </div>
-
-        <div class="footer__services footer__box">
-          <h4 class="footer__title">services</h4>
-          <ul class="footer__services-list">
-            <li class="footer__services-item">
-              <a class="footer__services-link" href="#">About us</a>
-            </li>
-            <li class="footer__services-item">
-              <a class="footer__services-link" href="#">Return Policy</a>
-            </li>
-            <li class="footer__services-item">
-              <a class="footer__services-link" href="#">Our blog</a>
-            </li>
-            <li class="footer__services-item">
-              <a class="footer__services-link" href="#">Contact Us</a>
-            </li>
-            <li class="footer__services-item">
-              <a class="footer__services-link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__account footer__box">
-          <h5 class="footer__title">account</h5>
-          <ul class="footer__account-list">
-            <li class="footer__account-item">
-              <a class="footer__account-link" href="#">Your Account</a>
-            </li>
-            <li class="footer__account-item">
-              <a class="footer__account-link" href="#">Checkout</a>
-            </li>
-            <li class="footer__account-item">
-              <a class="footer__account-link" href="http://localhost:3000/login.html">Login</a>
-            </li>
-            <li class="footer__account-item">
-              <a class="footer__account-link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__newsletter footer__box">
-          <h5 class="footer__title">newsletter</h5>
-
-          <form class="form">
-            <p class="form__text">Subscribe by our newsletter and get
-              update protidin
-            </p>
-
-            <label class="form__label">
-              <input class="form__field" type="text" name="email" placeholder="Email address" required>
-            </label>
-
-            <button class="form__button" type="submit">Subscribe</button>
-          </form>
-        </div>
-
+        </ul>
       </div>
 
-      <div class="line"></div>
+      <div class="footer__services footer__box">
+        <h4 class="footer__title">services</h4>
+        <ul class="footer__services-list">
+          <li class="footer__services-item">
+            <a class="footer__services-link" href="#">About us</a>
+          </li>
+          <li class="footer__services-item">
+            <a class="footer__services-link" href="#">Return Policy</a>
+          </li>
+          <li class="footer__services-item">
+            <a class="footer__services-link" href="#">Our blog</a>
+          </li>
+          <li class="footer__services-item">
+            <a class="footer__services-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer__services-item">
+            <a class="footer__services-link" href="#">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="footer__account footer__box">
+        <h5 class="footer__title">account</h5>
+        <ul class="footer__account-list">
+          <li class="footer__account-item">
+            <a class="footer__account-link" href="#">Your Account</a>
+          </li>
+          <li class="footer__account-item">
+            <a class="footer__account-link" href="#">Checkout</a>
+          </li>
+          <li class="footer__account-item">
+            <a class="footer__account-link" href="http://localhost:3000/login.html">Login</a>
+          </li>
+          <li class="footer__account-item">
+            <a class="footer__account-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
 
-      <div class="footer__down">
-        <p class="footer__down-text">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
+      <div class="footer__newsletter footer__box">
+        <h5 class="footer__title">newsletter</h5>
 
-        <nav class="footer__nav">
-          <ul class="footer__menu">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Home</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">About</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Blog</a>
-            </li>
-            <li class="footer__item footer__item-line">
-              <a class="footer__link " href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+        <form class="form">
+          <p class="form__text">Subscribe by our newsletter and get
+            update protidin
+          </p>
+
+          <label class="form__label">
+            <input class="form__field" type="text" name="email" placeholder="Email address" required>
+          </label>
+
+          <button class="form__button" type="submit">Subscribe</button>
+        </form>
       </div>
 
     </div>
-  </footer>
+
+    <div class="line"></div>
+
+
+    <div class="footer__down">
+      <p class="footer__down-text">
+        ©2020 CopyRight Example. All rights reserved.
+      </p>
+
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Home</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">About</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+          <li class="footer__item footer__item-line">
+            <a class="footer__link " href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</footer>
 
   <script src="jquery"></script>
   <script src="js/main.min.js"></script>

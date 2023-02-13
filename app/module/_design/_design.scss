@@ -1,0 +1,50 @@
+.design {
+
+  &__box {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+
+  &__items {
+    width: 370px;
+    height: 250px;
+    background-image: url('../images/furniture/sofa.jpg');
+    padding: 45px 40px;
+  }
+
+  &__items1 {
+    background-image: url('../images/furniture/bed.jpg');
+  }
+
+  &__items2 {
+    background-image: url('../images/furniture/chair.jpg');
+  }
+
+  &__items3 {
+    background-image: url('../images/furniture/bed2.jpg');
+  }
+
+  &__items4 {
+    background-image: url('../images/furniture/chair2.jpg');
+  }
+
+  &__items5 {
+    background-image: url('../images/furniture/sofa2.jpg');
+  }
+
+  &__title {
+    @extend %dmsans-bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    width: 170px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    @extend %dmsans-bold;
+    color: #a9bfcb;
+  }
+}
