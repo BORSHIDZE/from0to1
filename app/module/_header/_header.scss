@@ -146,22 +146,12 @@
 
   &--menu__dots {
     position: absolute;
-    width: 0;
-    height: 0;
-    background-color: white;
-    border-radius: 50%;
-    display: block;
-    border: 3px solid transparent;
-    top: 22px;
-    left: 23px;
-    box-shadow: -10px -11px 0 0 white,
-      10px 11px 0 0 white,
-      -10px 11px 0 0 white,
-      10px -11px 0 0 white,
-      0 -11px 0 0 white,
-      0 11px 0 0 white,
-      10px 0 0 0 white,
-      -10px 0 0 0 white;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/menu-dots.svg');
+    background-repeat: no-repeat;
+    top: 14px;
+    left: 15px;
   }
 }
 
@@ -172,3 +162,24 @@
 .user__link:active {
   opacity: 0.5;
 }
+
+.menu__burger {
+  display: none;
+}
+
+// @media (max-widht: 1200px) {}
+
+@media (max-widht: 992px) {
+  .menu__burger {
+    display: block;
+    background-color: red;
+  }
+
+  .menu__list-header {
+    display: none;
+  }
+}
+
+@media (max-widht: 768px) {}
+
+@media (max-widht: 576px) {}
