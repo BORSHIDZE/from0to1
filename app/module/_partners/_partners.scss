@@ -9,3 +9,25 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1200px) {
+  .partners__box {
+    width: auto;
+
+    img {
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    &__box {
+      flex-direction: column;
+
+      img {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

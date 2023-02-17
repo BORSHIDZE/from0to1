@@ -28,6 +28,12 @@ body {
   margin-top: 70px;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
 .button {
   @extend %rubik-medium;
   font-size: 15px;
@@ -148,5 +154,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    margin-top: 80px;
   }
 }

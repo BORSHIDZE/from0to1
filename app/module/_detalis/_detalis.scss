@@ -135,4 +135,111 @@
       }
     }
   }
+
+  .jq-number__field input {
+    width: 100%;
+    width: 50px;
+    height: 50px;
+    padding: 17px 10px;
+    border: none;
+    outline: none;
+    background: none;
+    @extend %rubik-regular;
+    color: #5c5c5c;
+    text-align: center;
+    box-shadow: none;
+    border-radius: none;
+    background-color: transparent;
+    box-shadow: transparent;
+  }
+
+  .jq-number__field {
+    width: 100px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
+    box-shadow: transparent;
+  }
+
+
+  .jq-number {
+    position: relative;
+    vertical-align: middle;
+    padding: 0px 50px;
+  }
+
+  .jq-number__spin.minus {
+    width: 50px;
+    height: 50px;
+    top: auto;
+    bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
+    box-shadow: transparent;
+    border-right: transparent;
+    position: absolute;
+
+    &:hover {
+      border: 1px solid #a3bbc8;
+      border-right: transparent;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .jq-number__spin.plus {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: auto;
+    bottom: 50%;
+    right: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    border: 1px solid #a3bbc8;
+    border-bottom-color: #a3bbc8;
+    border-radius: 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+  }
+
+  .jq-number__spin.minus::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    border: none;
+    width: 9px;
+    height: 1px;
+    background-color: #000;
+  }
+
+  .jq-number__spin.plus::before {
+    content: "";
+    position: absolute;
+    border: none;
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    top: 20px;
+    left: 24px;
+  }
+
+  .jq-number__spin.plus::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    border: none;
+    width: 9px;
+    height: 1px;
+    background-color: #000;
+  }
 }

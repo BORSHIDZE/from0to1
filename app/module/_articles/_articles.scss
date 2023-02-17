@@ -109,6 +109,16 @@
     margin: 35px auto;
     font-size: 18px;
     display: inline-block;
+
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__box-inner {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -134,3 +144,82 @@
     @extend %rubik-light
   }
 }
+
+@media (max-width: 1200px) {
+
+  .articles {
+
+    &__img-box {
+      display: none;
+    }
+
+    &__box {
+      width: auto;
+      margin: 0 5px;
+    }
+
+    &__box-inner {
+      margin-bottom: -20px;
+    }
+
+    &__text {
+      margin: 15px auto;
+    }
+  }
+
+  .partners__box {
+    width: auto;
+
+    img {
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .articles {
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+
+    &__box {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .articles {
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__title {
+      text-align: start;
+    }
+
+    &__link::after {
+      right: -12px;
+      top: 10px;
+    }
+  }
+
+
+  .partners {
+    &__box {
+      flex-direction: column;
+
+      img {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {}

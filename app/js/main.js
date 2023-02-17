@@ -1,5 +1,9 @@
 $(function name(params) {
 
+  $('.user__link--menu__btn').on('click', function () {
+    $('.menu__list-header').toggleClass('menu__list-header--active');
+  })
+
   $('.related__btn').on('click', function() {
     $('.related__btn').removeClass('related__btn--active');
     $(this).addClass('related__btn--active'); 

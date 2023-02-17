@@ -209,3 +209,52 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .blog__box {
+    display: none;
+  }
+
+  .blog__inner {
+    justify-content: center;
+  }
+
+  .blog__item-links {
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .blog__item-link,
+  .blog__item-links {
+    display: none;
+  }
+
+  .blog__item {
+    margin-right: 0;
+    width: 750px;
+    margin-left: 50px;
+  }
+
+  .blog-pagination {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog__item {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  .blog__box1 {
+    display: list-item;
+  }
+
+  .pagination {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {}
