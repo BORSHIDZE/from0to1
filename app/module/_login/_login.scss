@@ -86,3 +86,10 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .log__form {
+    width: auto;
+    padding: 0;
+  }
+}

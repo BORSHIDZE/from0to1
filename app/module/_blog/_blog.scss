@@ -250,11 +250,38 @@
 
   .blog__box1 {
     display: list-item;
+    min-width: 576px;
   }
 
   .pagination {
     margin-top: 50px;
+    justify-content: start;
+    margin-left: 15px
   }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .blog__box1 {
+    min-width: 350px;
+  }
+
+  .blog__item-title {
+    margin: 25px 0;
+    font-size: 30px;
+  }
+
+  .blog__item-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  .blog__item {
+    width: auto;
+    padding: 0 5px;
+  }
+
+  .pagination {
+    width: auto;
+  }
+}
