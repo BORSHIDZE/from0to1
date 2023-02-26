@@ -5,18 +5,11 @@
   &__top {
     display: flex;
     margin-bottom: 40px;
+    justify-content: space-between;
   }
 
   &__info {
     margin-right: 65px;
-  }
-
-  &__services {
-    margin-right: 180px;
-  }
-
-  &__account {
-    margin-right: 200px;
   }
 
   &__logo {
