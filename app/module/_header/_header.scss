@@ -1,3 +1,16 @@
+.main__text {
+  width: 800px;
+  margin: 100px auto;
+  padding: 5px;
+  @extend %rubik-regular;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+
 .header__inner {
   display: flex;
   justify-content: space-between;
